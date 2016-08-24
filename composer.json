@@ -1,0 +1,23 @@
+{
+    "name": "boangri/ololo",
+    "description": "Simple site on tinyMVC mini framework",
+    "keywords": ["tinymvc", "framework"],
+    "homepage": "https://github.com/boangri/ololo",
+    "type": "project",
+    "version": "1.0.0",
+    "license": "BSD-3-Clause",
+    "require": {
+        "php": ">=5.3.0",
+        "boangri/tinymvc": ">=1.0.3"
+    },
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/boangri/tinymvc"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"\\": "application/"}
+    }
+}
