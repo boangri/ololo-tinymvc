@@ -8,6 +8,6 @@ function my_autoload($classname)
     require_once __DIR__ . DIRECTORY_SEPARATOR . $path . ".php";
 }
 
-spl_autoload_register(my_autoload);
+spl_autoload_register('my_autoload');
 
 core\Route::start(); // запускаем маршрутизатор
