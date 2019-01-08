@@ -5,9 +5,12 @@ require __DIR__ . '/../vendor/autoload.php';
 function my_autoload($classname)
 {
     $path = str_replace("\\", DIRECTORY_SEPARATOR, $classname);
-    require_once __DIR__ . DIRECTORY_SEPARATOR . $path . ".php";
+    $file = __DIR__ . DIRECTORY_SEPARATOR . $path . ".php";
+    if(file_exists($file)) {
+        require_once $file;
+    }
 }
 
 spl_autoload_register('my_autoload');
 
-core\Route::start(); // запускаем маршрутизатор
+core\Route::start();

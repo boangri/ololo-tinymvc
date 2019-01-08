@@ -8,7 +8,7 @@
     "license": "BSD-3-Clause",
     "require": {
         "php": ">=5.3.0",
-        "boangri/tinymvc": ">=1.0.3"
+        "boangri/tinymvc": "~1.1.0"
     },
     "minimum-stability": "dev",
     "repositories": [
