@@ -13,4 +13,4 @@ function my_autoload($classname)
 
 spl_autoload_register('my_autoload');
 
-core\Route::start();
+core\route::start();

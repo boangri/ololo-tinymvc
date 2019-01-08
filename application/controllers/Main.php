@@ -1,7 +1,7 @@
 <?php
 namespace controllers;
 
-class Main extends \core\Controller
+class main extends \core\Controller
 {
     function action_index()
     {	
