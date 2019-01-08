@@ -2,7 +2,7 @@
 
 namespace controllers;
 
-class main extends \core\Controller
+class main extends \core\controller
 {
     function action_index()
     {	
